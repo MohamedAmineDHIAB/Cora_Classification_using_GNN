@@ -39,8 +39,10 @@ for the traning phase we get the following training loss plot:
 
 ![image](https://user-images.githubusercontent.com/85687148/127714992-d0041be9-ec7d-427a-ba70-8d7740790664.png)
 
+
 We save our trained model after `10 000 epochs`
 And then apply it on the test set and get the following accuracy:
+
 `
 --------------------------------------------------
 Test Accuracy   :    0.7710
