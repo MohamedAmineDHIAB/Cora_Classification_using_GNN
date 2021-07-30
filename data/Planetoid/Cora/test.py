@@ -2,6 +2,9 @@ import numpy
 import torch
 import seaborn as sns
 from matplotlib import pyplot as plt
+import model
+from get_data import get_data
+
 
 def test(model, data):
     model.eval()
@@ -13,3 +16,16 @@ def test(model, data):
     # Derive ratio of correct predictions.
     test_acc = int(test_correct.sum()) / int(data.test_mask.sum())
     return test_acc
+
+
+if __name__ == "__main__":
+    # Initialize model
+    model = model.GCN(hidden_channels=16)
+
+    # get data and model for  testing
+    data = get_data()[0]
+    model.load_state_dict(torch.load('./data/model.pth'))
+
+    # get test accuracy
+    test_acc = test(model, data)
+    print('-'*50+f'\nTest Accuracy   :    {test_acc:.4f}\n'+'-'*50)

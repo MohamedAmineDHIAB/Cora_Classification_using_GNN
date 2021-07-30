@@ -50,4 +50,4 @@ if __name__ == '__main__':
     loss_indices = [i for i, l in enumerate(losses_float)]
     sns.lineplot(x=loss_indices, y=losses_float)
     plt.savefig('./figs/training_loss.png')
-    torch.save(model.state_dict(), './data')
+    torch.save(model.state_dict(), './data/model.pth')
