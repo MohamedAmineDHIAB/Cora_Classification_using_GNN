@@ -20,7 +20,7 @@ def train():
 if __name__ == '__main__':
     # Initialize model
     model = model.GCN(hidden_channels=16)
-
+    print('-'*50, '\nTraining the following model :\n\n', model, '-'*50, '\n')
     # get data for traning and testing
     data = get_data()[0]
 
