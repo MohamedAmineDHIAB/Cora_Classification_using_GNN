@@ -44,9 +44,9 @@ We save our trained model after `10 000 epochs`
 And then apply it on the test set and get the following accuracy:
 
 `
---------------------------------------------------
+
 Test Accuracy   :    0.7710
---------------------------------------------------
+
 `
 
 
