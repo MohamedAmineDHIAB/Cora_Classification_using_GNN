@@ -43,7 +43,16 @@ for the traning phase we get the following training loss plot:
 We save our trained model after `10 000 epochs`
 And then apply it on the test set and get the following accuracy:
 
-`Test Accuracy   :    0.7710
-`
+`Test Accuracy   :    0.7710`
+
+An example of output for the input features that causes the most confusion for which class to give is the following :
+
+![image](https://user-images.githubusercontent.com/85687148/127743642-693eef06-92a0-46af-ad0d-07c3cb13a774.png)
+
+The model predicts the class `0` since it has the highest probability, which means that the document is of type `Neural_Networks`.
+
+
+
+
 
 
