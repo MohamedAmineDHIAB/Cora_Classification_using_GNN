@@ -1,4 +1,4 @@
-import numpy
+import numpy as np
 import torch
 import seaborn as sns
 from matplotlib import pyplot as plt
@@ -27,5 +27,16 @@ if __name__ == "__main__":
     model.load_state_dict(torch.load('./data/model.pth'))
 
     # get test accuracy
+
+    sns.set_theme(style="whitegrid")
     test_acc = test(model, data)
     print('-'*50+f'\nTest Accuracy   :    {test_acc:.4f}\n'+'-'*50)
+    pred = model(data.x, data.edge_index)
+    sns.barplot(x=np.array(range(7)), y=pred[torch.argmin(torch.norm(pred,dim=1,p=2))].detach().cpu().numpy())
+    plt.savefig('./figs/output_example.png')
+
+
+
+
+
+
