@@ -1,7 +1,7 @@
 # Cora_Classification_using_GNN
 
 
-In this REPO we try to use Pytorch Geometric to build a Graph Neural Network and test it on the Cora Citation Dataset. Simple MLP models perform a lot worse than GNNs on this type of task, as the citation information is crucial for a correct classification therefore we use GNN (we can not just use the features of each node to classify it we need the relation ,i.e the citation, to get a better performance 
+In this REPO we try to use Pytorch Geometric to build a Graph Neural Network and test it on the Cora Citation Dataset. Simple MLP models perform a lot worse than GNNs on this type of task, as the citation information is crucial for a correct classification therefore we use GNN (we can not just use the features of each node to classify it we need the relation ,i.e the citation, to get a better performance, which in GNN corresponds to the edges between nodes, things that you can not apply to simple MLP models)
 
 ## Cora :
 
