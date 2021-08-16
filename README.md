@@ -5,6 +5,15 @@ In this REPO we try to use Pytorch Geometric to build a Graph Neural Network and
 
 ## Cora :
 
+
+<p align="center">
+  <kbd>
+  <img width="700" height="300" src="https://user-images.githubusercontent.com/85687148/129501690-050e4c6b-cab3-46a1-b900-27fa5dedb0ed.png">
+  </kbd>
+</p>
+ 
+
+
 The Cora dataset consists of 2708 scientific publications classified into one of seven classes. The citation network consists of 5429 links. Each publication in the dataset is described by a 0/1-valued word vector indicating the absence/presence of the corresponding word from the dictionary. The dictionary consists of 1433 unique words.
 
 
